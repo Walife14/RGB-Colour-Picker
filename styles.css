@@ -7,7 +7,7 @@
 body {
     background: rgb(2,0,36);
     color: #fff;
-    font-family: arial;
+    font-family: 'Varela Round', arial;
 }
 
 .container {
@@ -37,11 +37,13 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    padding: .25em 0;
 }
 
-nav ul li {
+#navlink {
     margin-right: 2em;
     font-size: 1.25em;
+    text-transform: uppercase;
 }
 
 #navlink:hover {
@@ -106,8 +108,10 @@ p {
     width: 80%;
     margin: auto;
     background: black;
+    border: 1px dashed rgb(207, 196, 196);
 }
 
 .exampleText {
-    padding: .25em;
+    display: block;
+    padding: .5em;
 }
