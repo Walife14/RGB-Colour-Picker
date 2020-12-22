@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" async></script>
 </head>
+
 <body>
     <header class="container ">
         <h1>Random RGB Picker</h1>
@@ -25,10 +27,18 @@
         </ul>
     </nav>
     <section id="colourGenerator" class="container">
-        <div id="colourExample"><span id="colourExampleText">rgb(54,54,54)</span></div>
+        <div id="colourExample"><span class="colourExampleText" id="cExampleText"></span></div>
         <div id="generateNav">
             <span id="generateColour" class="generateNavOption">Generate A New RGB Colour</span>
         </div>
     </section>
+    <section class="container">
+        <p>Would you like to use this colour? copy and paste below:</p>
+        <div id="useContainer">
+            <p class="exampleText">background: <span class="colourExampleText"></span></p>
+            <p class="exampleText">color: <span class="colourExampleText"></span></p>
+        </div>
+    </section>
 </body>
+
 </html>

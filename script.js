@@ -1,9 +1,10 @@
 const generateColour = document.getElementById("generateColour");
 const colourExample = document.getElementById("colourExample");
-const colourExampleText = document.getElementById("colourExampleText");
+const colourExampleText = document.getElementsByClassName("colourExampleText");
 
 generateColour.addEventListener("click", generateRGB)
 
+console.log(colourExampleText.length)
 
 /* functions */
 
@@ -12,7 +13,9 @@ function generateRGB() {
     /* Assign the background colour of display to new rgb value */
     colourExample.style.backgroundColor = x;
     /* Assign the RGB value of the background colour to user */
-    colourExampleText.innerHTML = x;
+    for(var i = 0; i < colourExampleText.length; i++){
+        colourExampleText[i].innerHTML = x;
+    }
 }
 
 function generateNumbers() {

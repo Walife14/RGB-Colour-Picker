@@ -65,8 +65,8 @@ nav ul li {
     border-top-right-radius: 2em;
 }
 
-#colourExampleText {
-    background: rgb(84, 56, 150);
+#cExampleText {
+    background: rgb(13, 13, 13);
     color: rgb(156, 130, 130);
     opacity: 75%;
 }
@@ -92,4 +92,22 @@ nav ul li {
 .generateNavOption:hover {
     cursor: pointer;
     color: rgb(214, 177, 177);
+}
+
+/* copy code area */
+
+p {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#useContainer {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    background: black;
+}
+
+.exampleText {
+    padding: .25em;
 }
