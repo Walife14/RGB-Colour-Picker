@@ -75,7 +75,7 @@ nav ul {
 
 #generateNav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 2.5em;
     width: 80%;
     margin: auto;

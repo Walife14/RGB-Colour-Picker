@@ -1,20 +1,36 @@
 const generateColour = document.getElementById("generateColour");
 const colourExample = document.getElementById("colourExample");
 const colourExampleText = document.getElementsByClassName("colourExampleText");
+const previousColour = document.getElementById("previousColour");
 
-generateColour.addEventListener("click", generateRGB)
+let oldRGB, newRGB;
 
-console.log(colourExampleText.length)
+generateColour.addEventListener("click", generateRGB);
+previousColour.addEventListener("click", previousRGB);
 
-/* functions */
+/* Variable Declarations */
+
+
+
+/* Functions */
 
 function generateRGB() {
-    let x = generateNumbers();
+    oldRGB = newRGB;
+    newRGB = generateNumbers();
     /* Assign the background colour of display to new rgb value */
-    colourExample.style.backgroundColor = x;
+    colourExample.style.backgroundColor = newRGB;
     /* Assign the RGB value of the background colour to user */
     for(var i = 0; i < colourExampleText.length; i++){
-        colourExampleText[i].innerHTML = x;
+        colourExampleText[i].innerHTML = newRGB;
+    }
+}
+
+function previousRGB() {
+    /* Assign the background colour of display to the previous rgb value */
+    colourExample.style.backgroundColor = oldRGB;
+    /* Assign the RGB value of the background colour to user */
+    for(var i = 0; i < colourExampleText.length; i++){
+        colourExampleText[i].innerHTML = oldRGB;
     }
 }
 
