@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+    color: #fff;
+    font-family: arial;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* header */
+
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: .5em;
+}
+
+/* nav */
+
+nav {
+    background: rgb(84, 56, 150);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 2em;
+    font-size: 1.25em;
+}
+
+#navlink:hover {
+    color: rgb(214, 177, 177);
+}
+
+/* Colour generator */
+
+#colourGenerator {
+}
+
+#colourExample {
+    background: rgb(84, 56, 150);
+    height: 10em;
+    width: 80%;
+    margin: 2em auto 0 auto;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+#generateNav {
+    display: flex;
+    justify-content: center;
+    height: 2.5em;
+    width: 80%;
+    margin: auto;
+    background: rgb(13, 13, 13);
+}
+
+.generateNavOption {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: .5s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.generateNavOption:hover {
+    cursor: pointer;
+    color: rgb(214, 177, 177);
+}
