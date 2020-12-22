@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGB Colour Picker!</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
 </head>
 <body>
     <header class="container ">
@@ -24,9 +25,9 @@
         </ul>
     </nav>
     <section id="colourGenerator" class="container">
-        <div id="colourExample"></div>
+        <div id="colourExample"><span id="colourExampleText">rgb(54,54,54)</span></div>
         <div id="generateNav">
-            <span class="generateNavOption">Generate A New Colour</span>
+            <span id="generateColour" class="generateNavOption">Generate A New RGB Colour</span>
         </div>
     </section>
 </body>

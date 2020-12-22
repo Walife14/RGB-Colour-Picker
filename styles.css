@@ -54,12 +54,21 @@ nav ul li {
 }
 
 #colourExample {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background: rgb(84, 56, 150);
     height: 10em;
     width: 80%;
     margin: 2em auto 0 auto;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
+}
+
+#colourExampleText {
+    background: rgb(84, 56, 150);
+    color: rgb(156, 130, 130);
+    opacity: 75%;
 }
 
 #generateNav {
